@@ -4,6 +4,7 @@ This repository contains many projects on machine learning
 - Project One, learn about pipelines, tokenisation, prompt batching and temperature
 - Project Two, learn about loading datasets, tokenising datasets, training a model and fine-tuning
 - Project Three, learn about linear and logistic regression models
+- Project Four, learn about decision trees and random forests
 
 ```
 
@@ -34,6 +35,12 @@ project_three/
 ├── graph_linear_regression.py
 └── graph_logistic_regression.py
 
+project_four/
+├── notes.txt
+├── requirements.txt
+├── basic_decision_tree.py
+├── basic_random_forest.py
+
 ```
 
 ## ⚙️ Setup
@@ -53,5 +60,6 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
