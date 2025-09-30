@@ -1,0 +1,40 @@
+# Regression Theory
+
+# Linear Regression
+
+The goal is to fit a line using y = w ⋅ x + b
+x = input (feature)
+y = target (output)
+w = slope (gradient)
+b = intercept (value of y when x = 0)
+
+Margin of Error Calculation
+error = y - (w ⋅ x + b)
+- This is the vertical distance between the actual and predicted value
+
+The Loss Function
+L( w, b ) = ( 1/n ) ∑n​ (y ​− ( w ⋅ x ​+ b ))^2
+- To measure the total error, we use the Mean Squared Error
+
+Normal Equation
+β = (X^t ⋅ X)^−1 ⋅ X^t ⋅ y
+
+# Logistics Regression
+
+Linear regression lines can go below 0 or above 1
+This is not valid for probabilities, this means we need a function that:
+- Always outputs between 0 and 1
+- Is smooth (so gradient descent can optimise)
+- Seperates low inputs as ~0, high inputs as ~1
+
+The Sigmoid Function
+σ(z)=1/(1+e−z1​)
+If z→−∞, σ(z)→0
+If z=0, σ(z)=0.5
+If z→+∞, σ(z)→1
+
+The Model Computation with a Linear Combo
+p=σ(z)=1/(1 + e−(wx+b))
+
+The Loss Function
+L( w,b )= -1/n ∑​[ y​log(p​)+(1−yi)log(1−p) ]

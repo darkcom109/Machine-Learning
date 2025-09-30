@@ -1,0 +1,40 @@
+NOTES
+
+## Recap
+- Project one includes a pre-trained model
+- Fine-tuning means you take that pre-trained model and insert your own dataset
+- Base DistilGPT-2 = trained on Reddit and some Wikipedia
+- Fine-tuning on Shakespeare = slight change in tone
+- Result = models knows Reddit, Wikipedia and lean into Shakespeare
+
+## Understanding the dataset
+- This project uses Tiny Shakespeare (~100,000 characters of Shakespeare's plays)
+- Once trained on this dataset, it will noticeably alter its tone
+
+# Understanding tokenization in training
+- For fine-tuning, you encode every line of the dataset
+- Then the model trains by predicting the next token again repetitively
+
+# Training pipeline
+- Split dataset into training (90%) and validation (10%)
+- Training dataset = where model learns
+- Validation dataset = where model is tested (exam) after each epoch
+- Epoch = one full pass through the training dataset
+- Batch = small group of lines processed at once (opposed to one at a time)
+- Batch size = controls how many lines per step (larger = faster but uses more memory)
+- Learning rate = how big the model's weight updates are (smaller = safer, slower)
+- Weight decay = regularisation trick to stop model memorising everything
+
+## Loss and Perplexity
+- Loss = "wrongness score" (cross-entropy loss measures how far predictions are from the truth)
+- Lower loss = better predictions
+- Perplexity = exp(loss), measures how confused the model is
+    - Perplexity ~1 = very confident
+    - Perplexity ~20 = choosing between 20 possible tokens on average
+- During training, both training loss and validation loss/perplexity should decrease
+
+## Practical notes
+- DistilGPT-2 has ~82 million parameters
+- On CPU: training can take many hours
+- On GPU: training can finish in minutes
+- Can limit training with 'max_steps' or smaller dataset slices for quick testing

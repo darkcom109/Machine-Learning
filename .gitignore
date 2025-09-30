@@ -1,0 +1,3 @@
+# Ignore model checkpoints
+results/
+*.safetensors

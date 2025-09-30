@@ -1,0 +1,40 @@
+NOTES
+
+## Models
+- DistilGPT-2 is a distilled version of GPT-2
+- It is a smaller and more legacy model, containing 117M parameters
+
+## Tokenization
+- Text is broken into tokens (sub-word chunks)
+- Each token gets mapped to an integer ID
+- Model works only with numbers not raw text
+- Encoding = text -> tokens, Decoding tokens -> text
+
+## Tensors
+- Generalised arrays (0D scalars, 1D vector, 2D matrix, 3D cube)
+- Model inputs/outputs are all Tensors
+- Shapes describe dimensions, e.g. (3, 40) = 3 sequences, each up to 40 tokens
+
+## Padding
+- Batches require equal length sequences
+- GPT-2 doesn't have a native pad token, so we set pad_token = eos_token
+- Attention mask tells the model which parts are real vs padding
+
+## Generation
+- Greedy: always picks most likely next token (boring)
+- Sampling: picks randomly according to probability distribution (creative)
+- Parameters:
+    - temperature: controls randomness (<1 = more focused, >1 = more random)
+    - top_k: only sample from top K most likely tokens
+    - max_length: total length of input + generated text
+
+## Hallucinations
+- When the model outputs things that sound confident but are wrong/made-up
+- Example: Model says "Paris is the capital of Germany"
+- Happens because the model doesn't 'know facts' - it predicts the next token based on training patterns, not truth
+- Smaller models hallucinate more because they have less capacity to capture consistent patterns
+
+## Batching
+- Running multiple prompts at Once
+- Makes code efficient and GPU-friendly
+- Needs padding + attention mask
