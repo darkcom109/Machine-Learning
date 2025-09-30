@@ -1,0 +1,33 @@
+Paste your text,Minimum Length,Maximum Length,"Creativity (0 = safe, >0 = random)",Summary,timestamp
+"Pumping Lemma argument
+
+The pumping lemma says: if a language is regular, then any sufficiently long string in it can be split into 
+𝑥
+𝑦
+𝑧
+xyz such that repeating 
+𝑦
+y keeps the string in the language.
+
+Pick 
+𝑤
+=
+𝑎
+𝑝
+𝑏
+𝑝
+w=a
+p
+b
+p
+, where 
+𝑝
+p is the pumping length.
+
+The lemma forces 
+𝑦
+y to be entirely inside the block of as. So if you “pump” it, you get more as than bs.
+
+That string won’t be in L.
+
+Contradiction → L is not regular.",30,100,0,"The pumping lemma says: if a language is regular, then any sufficiently long string in it can be split into two. So if you “pump” it, you get more as than bs.",2025-09-30 17:18:18.837486
