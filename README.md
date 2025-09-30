@@ -3,6 +3,7 @@
 This repository contains many projects on machine learning
 - Project One, learn about pipelines, tokenisation, prompt batching and temperature
 - Project Two, learn about loading datasets, tokenising datasets, training a model and fine-tuning
+- Project Three, learn about linear and logistic regression models
 
 ```
 
@@ -25,6 +26,14 @@ project_two/
 ├── training_shakespeare.py
 └── training_shakespeare_theory.py
 
+project_three/
+├── notes.txt
+├── requirements.txt
+├── basic_linear_regression.py
+├── basic_logistic_regression.py
+├── graph_linear_regression.py
+└── graph_logistic_regression.py
+
 ```
 
 ## ⚙️ Setup
@@ -44,4 +53,5 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
