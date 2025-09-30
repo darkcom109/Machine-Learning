@@ -1,0 +1,14 @@
+# Decision Trees and Random Forest
+
+- Decision trees is a model that makes predictions by asking a sequence
+of yes/no questions about the features
+
+Example:
+
+Is it raining?
+ ├── Yes → Bring umbrella
+ └── No  → Do you see dark clouds?
+           ├── Yes → Bring umbrella
+           └── No  → Don’t bring umbrella
+
+- A random forest is an ensemble (collection) of many decision trees
