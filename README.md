@@ -5,6 +5,7 @@ This repository contains many projects on machine learning
 - Project Two, learn about loading datasets, tokenising datasets, training a model and fine-tuning
 - Project Three, learn about linear and logistic regression models
 - Project Four, learn about decision trees and random forests
+- Project Five, learn about Gradio and other types of model configurations (e.g. summarise)
 
 ```
 
@@ -43,6 +44,12 @@ project_four/
 ├── Housing.csv
 ├── house_price_prediction.py
 
+project_five/
+├── notes.txt
+├── requirements.txt
+├── summariser.py
+├── summariser_gradio.py
+
 ```
 
 ## ⚙️ Setup
@@ -62,6 +69,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
