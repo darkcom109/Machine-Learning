@@ -49,6 +49,7 @@ project_five/
 ├── requirements.txt
 ├── summariser.py
 ├── summariser_gradio.py
+├── summariser_gradio_upgrade.py
 
 ```
 
@@ -69,6 +70,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
