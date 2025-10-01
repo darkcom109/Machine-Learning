@@ -1,5 +1,10 @@
 ﻿# Machine-Learning 🎭
 
+Highlighted Projects
+- Loading, tokenising and training a language model using Tiny Shakespeare (Project Two)
+- Predicting student scores and house prices using Linear Regression Modelling (Project Three + Project Four)
+- Gradio application for summarising input (Project Six)
+  
 This repository contains many projects on machine learning
 - Project One, learn about pipelines, tokenisation, prompt batching and temperature
 - Project Two, learn about loading datasets, tokenising datasets, training a model and fine-tuning
@@ -76,6 +81,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
