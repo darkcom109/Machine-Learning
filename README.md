@@ -6,6 +6,7 @@ This repository contains many projects on machine learning
 - Project Three, learn about linear and logistic regression models
 - Project Four, learn about decision trees and random forests
 - Project Five, learn about Gradio and other types of model configurations (e.g. summarise)
+- Project Six, more custom Gradio apps and advanced models
 
 ```
 
@@ -51,6 +52,11 @@ project_five/
 ├── summariser_gradio.py
 ├── summariser_gradio_upgrade.py
 
+project_six/
+├── notes.txt
+├── requirements.txt
+├── gradio.py
+
 ```
 
 ## ⚙️ Setup
@@ -70,6 +76,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
