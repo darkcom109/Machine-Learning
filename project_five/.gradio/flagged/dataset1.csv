@@ -31,3 +31,21 @@ y to be entirely inside the block of as. So if you “pump” it, you get more a
 That string won’t be in L.
 
 Contradiction → L is not regular.",30,100,0,"The pumping lemma says: if a language is regular, then any sufficiently long string in it can be split into two. So if you “pump” it, you get more as than bs.",2025-09-30 17:18:18.837486
+"In short
+
+Import pipeline → load model + tokenizer.
+
+Give it text → it runs inference (forward pass only).
+
+Get back a nice string summary.
+
+Do you want me to also explain the Gradio UI version line by line (the one with gr.Interface), or just keep it at the raw summarizer script for now?",30,55,1.7,,2025-10-01 11:20:09.865933
+"In short
+
+Import pipeline → load model + tokenizer.
+
+Give it text → it runs inference (forward pass only).
+
+Get back a nice string summary.
+
+Do you want me to also explain the Gradio UI version line by line (the one with gr.Interface), or just keep it at the raw summarizer script for now?",30,55,1.7,,2025-10-01 11:20:13.108213
