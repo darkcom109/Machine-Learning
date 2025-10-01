@@ -2,7 +2,7 @@
 
 This repository is mainly for creative ideas in regards to machine learning and algorithms.
 
-Highlighted Projects
+# Highlighted Projects
 - Loading, tokenising and training a language model using Tiny Shakespeare (Project Two)
 - Predicting student scores and house prices using Linear Regression Modelling (Project Three + Project Four)
 - Gradio application for summarising input (Project Six)
@@ -83,6 +83,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
