@@ -62,7 +62,7 @@ project_five/
 project_six/
 ├── notes.txt
 ├── requirements.txt
-├── gradio.py
+├── gradio_app.py
 
 ```
 
@@ -83,6 +83,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 
